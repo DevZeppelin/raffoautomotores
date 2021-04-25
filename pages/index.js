@@ -1,65 +1,48 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+import Layout from "../components/Layout";
+import Link from "next/link";
 
-export default function Home() {
+
+export default function Home({ blogs }) {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
-        <title>Create Next App</title>
+        <title>Raffo Automotores</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta charSet="UTF-8" />
+        <meta
+          name="description"
+          content="Automotores Pablo Raffo Maipu Compra Venta Autos Usados"
+        />
+        
+        <meta name="author" content="Gino Pietrobon" />
       </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+      <Layout>
+        <div className="flex">
+          <h1 className=" w-full md:w-2/3 text-center text-secundary text-2xl md:text-3xl uppercase font-bold mt-16 ml-2 mb-5 md:ml-24">
+            ¡Encontrá un auto para vos!
+          </h1>
         </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
+        <div className="flex mb-12 flex-wrap-reverse md:flex-wrap mx-auto my-auto">
+          <div className="flex flex-col w-4/5 md:w-2/5 my-10 ml-8 md:ml-24  mt-8">
+            <div className="space-y-4 text-secundary text-lg">
+              <p>
+                En esta página encontrarás varios tipos de vehículos a la <strong>VENTA</strong>.
+              </p>         
+              <p>
+              También podés contactar con migo para vender tu auto y que sea visible.
+              </p>
+              <p>
+                Los autos están divididos en diferentes secciones. Esta página web es muy rápida así que podés navegar tranquilo.
+              </p>
+              
+            </div>
+          </div>
+          <div className="md:w-1/3 flex flex-auto items-center justify-center align-middle max-h-72 max-w-72 mr-6 ">
+            <img className="flex my-auto" src="logo.png" alt="img" width="500" height="300" />
+          </div>
+        </div>
+      </Layout>
     </div>
-  )
+  );
 }
