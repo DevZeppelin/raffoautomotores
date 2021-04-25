@@ -125,19 +125,19 @@ export default function Layout({ children }) {
           </p>
           
           
-          <Link href="https://api.whatsapp.com/send?phone=5492616708100" target="_blank">            
+          <Link href="https://api.whatsapp.com/send?phone=5492613895142" target="_blank">            
           <button target="_blank" rel="noopener" alt="whatsapp-logo">
             <FaWhatsapp className="hover:text-green-700" />
             </button>
           </Link>
 
-          <Link href="https://www.facebook.com/Gini77o">
+          <Link href="https://www.facebook.com/pablo.raffo.71">
           <button target="_blank" rel="noopener" alt="facebook-logo"> 
             <FaFacebook className="hover:text-blue-700" />
             </button>
           </Link>   
 
-          <Link href="mailto:gino.b.pietrobon@gmail.com">
+          <Link href="mailto:raffopabloandres@gmail.com">
            <button target="_blank" rel="noopener" alt="gmail-logo"> 
             <FiMail className="hover:text-red-600" />
             </button>
