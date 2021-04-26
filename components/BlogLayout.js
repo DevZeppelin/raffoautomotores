@@ -24,8 +24,9 @@ export default function BlogLayout({ tag, title, autos, secundary }) {
               />
 
               <h1 className="mt-5 mb-6 px-4 text-2xl">
-                {" "}
-                {RichText.render(article.data["precio"])}
+                <div className="flex justify-center font-bold">
+                  $ {RichText.render(article.data["precio"])}
+                </div>
               </h1>
               <h1 className="mt-5 mb-6 px-8">
                 {" "}

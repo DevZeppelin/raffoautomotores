@@ -18,7 +18,7 @@ export default function Layout({ children }) {
     <div>
       <div className="px-2 w-screen md:px-24 bg-secundary text-lightSilver1 flex justify-between h-16">
         <Link href="/">
-          <a className="text-lightSilver2 text-2xl flex align-baseline px-2 md:px-10 my-auto hover:text-lightSilver1">
+          <a className="text-lightSilver2 text-xl font-bold flex align-baseline px-2 md:px-10 my-auto uppercase hover:text-lightSilver1">
             <FaCar className="inline text-4xl mr-4" /> Raffo Automotores
           </a>
         </Link>
@@ -80,7 +80,7 @@ export default function Layout({ children }) {
           </div>          
       </div>
 
-      <div className="hidden bg-primary font-bold md:flex px-2 md:px-24 bg-white border-b border-black text-base">
+      <div className="hidden bg-primary font-bold md:flex px-2 md:px-24 border-b border-black text-base">
         <Link href="/">
           <a className="mr-10  mt-5 px-3 border-b-2 border-transparent hover:border-black">
             Home
@@ -120,14 +120,14 @@ export default function Layout({ children }) {
         
         <div className="flex space-x-5 md:space-x-10 mt-6 text-2xl md:text-4xl justify-center">
           
-          <p className="text-2xl">
-            Contacto:
+          <p className="text-lg uppercase font-bold">
+            Contacto :
           </p>
           
           
-          <Link href="https://api.whatsapp.com/send?phone=5492613895142" target="_blank">            
+          <Link href="https://api.whatsapp.com/send?phone=5492616040877" target="_blank">            
           <button target="_blank" rel="noopener" alt="whatsapp-logo">
-            <FaWhatsapp className="hover:text-green-700" />
+            <FaWhatsapp className="hover:text-green-500" />
             </button>
           </Link>
 
@@ -145,7 +145,7 @@ export default function Layout({ children }) {
         </div>
 
         <div className="mt-10 text-sm">
-          Raffo Automotores de Pablo Raffo. Página programada por Dev Zeppelin, de Gino Pietrobon. De Mendoza, Argentina. Todos los derechos reservados. &copy; &nbsp;{" "}
+          Raffo Automotores de Pablo Raffo. Programación: <a href="http://moonblog-delta.vercel.app" target="_blank">Moonwatcher</a>. De Mendoza, Argentina. Todos los derechos reservados. &copy; &nbsp;{" "}
           {new Date().getFullYear()}
         </div>
       </div>
